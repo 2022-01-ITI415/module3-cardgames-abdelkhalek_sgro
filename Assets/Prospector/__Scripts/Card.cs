@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 public class Card : MonoBehaviour {
 
-	public string    suit;
-	public int       rank;
-	public Color     color = Color.black;
-	public string    colS = "Black";  // or "Red"
-	
+	public string suit;
+	public int rank;
+	public Color color = Color.black;
+	public string colS = "Black";  // or "Red"
+
 	public List<GameObject> decoGOs = new List<GameObject>();
 	public List<GameObject> pipGOs = new List<GameObject>();
-	
+
 	public GameObject back;  // back of card;
 	public CardDefinition def;  // from DeckXML.xml		
 
@@ -23,7 +23,11 @@ public class Card : MonoBehaviour {
 
 		set {
 			back.SetActive(!value);
-		}
+		}	
+}
+	virtual public void OnMouseUpAsButton()
+	{
+		print(name);
 	}
 
 	public SpriteRenderer[] spriteRenderers;
@@ -72,6 +76,8 @@ public class Card : MonoBehaviour {
 					break;
             }
         }
+
+
     }
 	
 	// Update is called once per frame
