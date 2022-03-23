@@ -179,6 +179,10 @@ public class Prospector : MonoBehaviour {
                 {
 					validMatch = false;
                 }
+				if (!AdjacentRank(cd, target))
+                {
+					validMatch = false;
+                }
 				if (!validMatch) return;
 				tableau.Remove(cd);
 				MoveToTarget(cd);
