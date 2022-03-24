@@ -219,11 +219,13 @@ public class Prospector : MonoBehaviour {
     {
 		if(won)
         {
-			print("Game Over. You Won! :");
+			//print("Game Over. You Won! :");
+			ScoreManager.EVENT(eScoreEvent.gameWin);
         }
         else
         {
-			print("Game Over. You Lost. :");
+			//print("Game Over. You Lost. :");
+			ScoreManager.EVENT(eScoreEvent.gameLoss);
         }
 		SceneManager.LoadScene("_Prospector_Scene_0");
     }
