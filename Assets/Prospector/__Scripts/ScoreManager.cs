@@ -64,6 +64,10 @@ public class ScoreManager : MonoBehaviour
         }
         switch(evt)
         {
+            case eScoreEvent.mine:
+                chain++;
+                scoreRun += chain;
+                break;
             case eScoreEvent.gameWin:
                 SCORE_FROM_PREV_ROUND = score;
                 print("You won this round! Round Score: " + score);
