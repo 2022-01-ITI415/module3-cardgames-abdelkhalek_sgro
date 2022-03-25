@@ -35,10 +35,10 @@ public class Prospector : MonoBehaviour {
 
 	void Awake(){
 		S = this;
-		SetUpTexts();
+		SetUpUITexts();
 	}
 
-	void SetUpTexts()
+	void SetUpUITexts()
     {
 		GameObject go = GameObject.Find("HighScore");
 		if (go != null)
@@ -46,12 +46,12 @@ public class Prospector : MonoBehaviour {
 			highScoreText = go.GetComponent<Text>();
         }
 		int highScore = ScoreManager.HIGH_SCORE;
-		string hScore = "High Score" + Utils.AddCommasToNumber(highScore);
+		string hScore = "High Score " + Utils.AddCommasToNumber(highScore);
 		go.GetComponent<Text>().text = hScore;
 		go = GameObject.Find("GameOver");
 		if (go != null)
         {
-			roundResultText = go.GetComponent<Text>();
+			gameOverText = go.GetComponent<Text>();
         }
 		go = GameObject.Find("RoundResult");
 		if (go != null)
