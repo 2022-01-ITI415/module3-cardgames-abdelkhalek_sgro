@@ -209,7 +209,7 @@ public class PT_XMLReader_GS
 
 
 
-public class PT_XMLHashList
+public class PT_XMLHashList_GS
 {
 	public ArrayList list = new ArrayList();
 
@@ -248,7 +248,7 @@ public class PT_XMLHashList
 }
 
 
-public class PT_XMLHashtable
+public class PT_XMLHashtable_GS
 {
 
 	public List<string> keys = new List<string>();

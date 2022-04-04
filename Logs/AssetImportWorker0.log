@@ -1356,3 +1356,4 @@ Received Import Request.
   path: Assets/Golf_Solitaire/Scripts/PT_XMLReader_GS.cs
   artifactKey: Guid(b3c696655dcc9a04ebab3aa41a3c0ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Golf_Solitaire/Scripts/PT_XMLReader_GS.cs using Guid(b3c696655dcc9a04ebab3aa41a3c0ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd9aeff05ef108e32f641a113957973') in 0.011932 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
