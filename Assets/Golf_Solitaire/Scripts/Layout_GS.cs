@@ -21,7 +21,7 @@ public class Layout_GS : MonoBehaviour
     public PT_XMLReader_GS xmlr;
     public PT_XMLHashtable xml;
     public Vector2 multiplier;
-    public List<SlotDef> slotDefs;
+    public List<SlotDef_GS> slotDefs;
     public SlotDef_GS drawPile;
     public SlotDef_GS discardPile;
     public string[] sortingLayerNames = new string[] { "Row 0", "Row1", "Row2", "Row3", "Discard", "Draw" };
@@ -35,13 +35,13 @@ public class Layout_GS : MonoBehaviour
         multiplier.x = float.Parse(xml["multiplier"][0].att("x"));
         multiplier.y = float.Parse(xml["multiplier"][0].att("y"));
 
-        SlotDef tSD;
+        SlotDef_GS tSD;
 
         PT_XMLHashList slotsX = xml["slot"];
 
         for (int i = 0; i < slotsX.Count; i++)
         {
-            tSD = new SlotDef();
+            tSD = new SlotDef_GS();
             if (slotsX[i].HasAtt("type"))
             {
                 tSD.type = slotsX[i].att("type");
