@@ -20,7 +20,7 @@ public class CardGolfSolitaire : Card
 
     public override void OnMouseUpAsButton()
     {
-        GolfSolitaire.S.CardClicked(this);
+        //GolfSolitaire.S.CardClicked(this); ------------------------------------------------------------------------------- fix later
         base.OnMouseUpAsButton();
     }
     

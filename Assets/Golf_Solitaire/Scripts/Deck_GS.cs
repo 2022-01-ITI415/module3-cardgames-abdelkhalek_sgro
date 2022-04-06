@@ -6,18 +6,16 @@ public class Deck_GS : MonoBehaviour
 {
 	[Header("Set in Inspector")]
 	//Suits
-	public Sprite suitClub;
-	public Sprite suitDiamond;
-	public Sprite suitHeart;
-	public Sprite suitSpade;
+	public Sprite suitClub_GS;
+	public Sprite suitDiamond_GS;
+	public Sprite suitHeart_GS;
+	public Sprite suitSpade_GS;
 
 	public Sprite[] faceSprites;
 	public Sprite[] rankSprites;
 
-	public Sprite cardBack;
-	public Sprite cardBackGold;
-	public Sprite cardFront;
-	public Sprite cardFrontGold;
+	public Sprite cardBack_GS;
+	public Sprite cardFront_GS;
 
 	public bool showFaceUp = false;
 
@@ -43,16 +41,16 @@ public class Deck_GS : MonoBehaviour
 		// from page 576
 		if (GameObject.Find("_Deck") == null)
 		{
-			GameObject anchorGO = new GameObject("_Deck");
+			GameObject anchorGO = new GameObject("Deck_GS");
 			deckAnchor = anchorGO.transform;
 		}
 
 		// init the Dictionary of suits
 		dictSuits = new Dictionary<string, Sprite>() {
-			{"C", suitClub},
-			{"D", suitDiamond},
-			{"H", suitHeart},
-			{"S", suitSpade}
+			{"C", suitClub_GS},
+			{"D", suitDiamond_GS},
+			{"H", suitHeart_GS},
+			{"S", suitSpade_GS}
 		};
 
 
@@ -267,7 +265,7 @@ public class Deck_GS : MonoBehaviour
 
 			tGO = Instantiate(prefabSprite) as GameObject;
 			tSR = tGO.GetComponent<SpriteRenderer>();
-			tSR.sprite = cardBack;
+			tSR.sprite = cardBack_GS;
 			tGO.transform.SetParent(card.transform);
 			tGO.transform.localPosition = Vector3.zero;
 			tSR.sortingOrder = 2;
@@ -292,9 +290,9 @@ public class Deck_GS : MonoBehaviour
 		return (null);  // couldn't find the sprite (should never reach this line)
 	}// getFace 
 
-	static public void Shuffle(ref List<Card> oCards)
+	static public void Shuffle(ref List<Card_GS> oCards)
 	{
-		List<Card> tCards = new List<Card>();
+		List<Card_GS> tCards = new List<Card_GS>();
 
 		int ndx;   // which card to move
 

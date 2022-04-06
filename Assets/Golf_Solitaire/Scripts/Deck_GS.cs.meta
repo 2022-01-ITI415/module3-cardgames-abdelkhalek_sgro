@@ -3,7 +3,16 @@ guid: a352deec41cf6a448ae35ada7246f55d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - suitClub_GS: {fileID: 21300000, guid: 06d4c415054d7b8498c31f0fee873b02, type: 3}
+  - suitDiamond_GS: {fileID: 21300000, guid: 409f16ae60a16cc46b03d4fb07cd8fb1, type: 3}
+  - suitHeart_GS: {fileID: 21300000, guid: be5e3515087f5a04880cc060b785386c, type: 3}
+  - suitSpade_GS: {fileID: 21300000, guid: 2c54195d06233aa4b85d2fdb8f7345e9, type: 3}
+  - cardBack_GS: {fileID: 21300000, guid: be856236e29e38c42bd4e8372adbe97f, type: 3}
+  - cardFront_GS: {fileID: 21300000, guid: d7368f9a64dc74a47acd48004d52344a, type: 3}
+  - prefabSprite: {instanceID: 0}
+  - prefabCard: {instanceID: 0}
+  - deckAnchor: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
