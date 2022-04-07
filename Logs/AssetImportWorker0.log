@@ -201,3 +201,9 @@ Received Import Request.
   path: Assets/Golf_Solitaire/Scripts/Utils_GS.cs
   artifactKey: Guid(d67a467c612dbfb41b6336e3ff44b523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Golf_Solitaire/Scripts/Utils_GS.cs using Guid(d67a467c612dbfb41b6336e3ff44b523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b6931e72ea55cb7b2cd271781f2fb78') in 0.008018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4060.685749 seconds.
+  path: Assets/Golf_Solitaire/Scripts/CardGolfSolitaire.cs
+  artifactKey: Guid(9b2b9c0c365e4cf469de3af763e625bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Golf_Solitaire/Scripts/CardGolfSolitaire.cs using Guid(9b2b9c0c365e4cf469de3af763e625bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7b6c132d47cf807f5699f6538bcd8d') in 0.005655 seconds 
