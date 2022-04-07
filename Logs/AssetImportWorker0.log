@@ -942,3 +942,21 @@ Received Import Request.
   path: Assets/Golf_Solitaire/GameScene.unity
   artifactKey: Guid(8a69785a7c7394d1286e8e0987d1c268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Golf_Solitaire/GameScene.unity using Guid(8a69785a7c7394d1286e8e0987d1c268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ad268ada4adb1e5f5ea5ee0cd62f531') in 0.007411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 403.750626 seconds.
+  path: Assets/Golf_Solitaire/Sprites/Materials/Background_Mat_GS.mat
+  artifactKey: Guid(ec86d74434850d64c8c868ae6faec44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Golf_Solitaire/Sprites/Materials/Background_Mat_GS.mat using Guid(ec86d74434850d64c8c868ae6faec44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3796e9928f6ba8ebf3e096296005a2f') in 0.038164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1023.178210 seconds.
+  path: Assets/Golf_Solitaire/Resources/LayoutXML_GS.xml
+  artifactKey: Guid(3803755a683614e45979ffe2bbb547b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Golf_Solitaire/Resources/LayoutXML_GS.xml using Guid(3803755a683614e45979ffe2bbb547b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ee80f76b6b4a645d063877d5fbbf66') in 0.061173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 79.677338 seconds.
+  path: Assets/Golf_Solitaire/Resources/LayoutXML_GS.xml
+  artifactKey: Guid(3803755a683614e45979ffe2bbb547b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Golf_Solitaire/Resources/LayoutXML_GS.xml using Guid(3803755a683614e45979ffe2bbb547b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc625bae61035171fc669dbb93d3ba0') in 0.011912 seconds 
