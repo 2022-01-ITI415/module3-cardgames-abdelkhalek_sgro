@@ -27,7 +27,7 @@ public class PT_XMLReader_GS
 	//public string input;
 	//public TextAsset inputTA;
 	public string xmlText;
-	public PT_XMLHashtable xml;
+	public PT_XMLHashtable_GS xml;
 
 	/*
 	void Awake() {
@@ -45,12 +45,12 @@ public class PT_XMLReader_GS
 	public void Parse(string eS)
 	{
 		xmlText = eS;
-		xml = new PT_XMLHashtable();
+		xml = new PT_XMLHashtable_GS();
 		Parse(eS, xml);
 	}
 
 	// This function will parse a possible series of tags
-	void Parse(string eS, PT_XMLHashtable eH)
+	void Parse(string eS, PT_XMLHashtable_GS eH)
 	{
 		eS = eS.Trim();
 		while (eS.Length > 0)
@@ -61,7 +61,7 @@ public class PT_XMLReader_GS
 	}
 
 	// This function parses a single tag and calls Parse() if it encounters subtags
-	string ParseTag(string eS, PT_XMLHashtable eH)
+	string ParseTag(string eS, PT_XMLHashtable_GS eH)
 	{
 		// search for "<"
 		int ndx = eS.IndexOf("<");
@@ -116,12 +116,12 @@ public class PT_XMLReader_GS
 		// search for this tag in eH. If it's not there, make it
 		if (!eH.ContainsKey(tag))
 		{
-			eH[tag] = new PT_XMLHashList();
+			eH[tag] = new PT_XMLHashList_GS();
 		}
 		// Create a hashtable to contain this tag's information
-		PT_XMLHashList arrL = eH[tag] as PT_XMLHashList;
+		PT_XMLHashList_GS arrL = eH[tag] as PT_XMLHashList_GS;
 		//int thisHashIndex = arrL.Count;
-		PT_XMLHashtable thisHash = new PT_XMLHashtable();
+		PT_XMLHashtable_GS thisHash = new PT_XMLHashtable_GS();
 		arrL.Add(thisHash);
 
 		// Pull the attributes string
@@ -213,11 +213,11 @@ public class PT_XMLHashList_GS
 {
 	public ArrayList list = new ArrayList();
 
-	public PT_XMLHashtable this[int s]
+	public PT_XMLHashtable_GS this[int s]
 	{
 		get
 		{
-			return (list[s] as PT_XMLHashtable);
+			return (list[s] as PT_XMLHashtable_GS);
 		}
 		set
 		{
@@ -225,7 +225,7 @@ public class PT_XMLHashList_GS
 		}
 	}
 
-	public void Add(PT_XMLHashtable eH)
+	public void Add(PT_XMLHashtable_GS eH)
 	{
 		list.Add(eH);
 	}
@@ -252,18 +252,18 @@ public class PT_XMLHashtable_GS
 {
 
 	public List<string> keys = new List<string>();
-	public List<PT_XMLHashList> nodesList = new List<PT_XMLHashList>();
+	public List<PT_XMLHashList_GS> nodesList = new List<PT_XMLHashList_GS>();
 	public List<string> attKeys = new List<string>();
 	public List<string> attributesList = new List<string>();
 
-	public PT_XMLHashList Get(string key)
+	public PT_XMLHashList_GS Get(string key)
 	{
 		int ndx = Index(key);
 		if (ndx == -1) return (null);
 		return (nodesList[ndx]);
 	}
 
-	public void Set(string key, PT_XMLHashList val)
+	public void Set(string key, PT_XMLHashList_GS val)
 	{
 		int ndx = Index(key);
 		if (ndx != -1)
@@ -288,7 +288,7 @@ public class PT_XMLHashtable_GS
 	}
 
 
-	public PT_XMLHashList this[string s]
+	public PT_XMLHashList_GS this[string s]
 	{
 		get
 		{

@@ -25,7 +25,7 @@ public class Deck_GS : MonoBehaviour
 
 	[Header("Set Dynamically")]
 
-	public PT_XMLReader xmlr;
+	public PT_XMLReader_GS xmlr;
 	// add from p 569
 	public List<string> cardNames;
 	public List<Card> cards;
@@ -64,7 +64,7 @@ public class Deck_GS : MonoBehaviour
 	// ReadDeck parses the XML file passed to it into Card Definitions
 	public void ReadDeck(string deckXMLText)
 	{
-		xmlr = new PT_XMLReader();
+		xmlr = new PT_XMLReader_GS();
 		xmlr.Parse(deckXMLText);
 
 		// print a test line
@@ -79,7 +79,7 @@ public class Deck_GS : MonoBehaviour
 		// these are the small numbers/suits in the corners
 		decorators = new List<Decorator>();
 		// grab all decorators from the XML file
-		PT_XMLHashList xDecos = xmlr.xml["xml"][0]["decorator"];
+		PT_XMLHashList_GS xDecos = xmlr.xml["xml"][0]["decorator"];
 		Decorator deco;
 		for (int i = 0; i < xDecos.Count; i++)
 		{
@@ -97,7 +97,7 @@ public class Deck_GS : MonoBehaviour
 		// read pip locations for each card rank
 		// read the card definitions, parse attribute values for pips
 		cardDefs = new List<CardDefinition>();
-		PT_XMLHashList xCardDefs = xmlr.xml["xml"][0]["card"];
+		PT_XMLHashList_GS xCardDefs = xmlr.xml["xml"][0]["card"];
 
 		for (int i = 0; i < xCardDefs.Count; i++)
 		{
@@ -105,7 +105,7 @@ public class Deck_GS : MonoBehaviour
 			CardDefinition cDef = new CardDefinition();
 			cDef.rank = int.Parse(xCardDefs[i].att("rank"));
 
-			PT_XMLHashList xPips = xCardDefs[i]["pip"];
+			PT_XMLHashList_GS xPips = xCardDefs[i]["pip"];
 			if (xPips != null)
 			{
 				for (int j = 0; j < xPips.Count; j++)
