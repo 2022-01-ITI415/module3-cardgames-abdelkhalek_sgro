@@ -13,7 +13,7 @@ public class Card : MonoBehaviour {
 	public List<GameObject> pipGOs = new List<GameObject>();
 
 	public GameObject back;  // back of card;
-	public CardDefinition def;  // from DeckXML.xml		
+	public CardDefinition def;  // from DeckXML_GS.xml		
 
 
 	public bool faceUp {

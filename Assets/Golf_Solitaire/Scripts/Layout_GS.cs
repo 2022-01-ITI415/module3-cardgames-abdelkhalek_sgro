@@ -19,12 +19,12 @@ public class SlotDef_GS
 public class Layout_GS : MonoBehaviour
 {
     public PT_XMLReader_GS xmlr;
-    public PT_XMLHashtable xml;
+    public PT_XMLHashtable_GS xml;
     public Vector2 multiplier;
     public List<SlotDef_GS> slotDefs;
     public SlotDef_GS drawPile;
     public SlotDef_GS discardPile;
-    public string[] sortingLayerNames = new string[] { "Row 0", "Row1", "Row2", "Row3", "Discard", "Draw" };
+    public string[] sortingLayerNames = new string[] { "Row 0", "Row1", "Row2", "Row3", "Row4", "Discard", "Draw" };
 
     public void ReadLayout(string xmlText)
     {
@@ -37,7 +37,7 @@ public class Layout_GS : MonoBehaviour
 
         SlotDef_GS tSD;
 
-        PT_XMLHashList slotsX = xml["slot"];
+        PT_XMLHashList_GS slotsX = xml["slot"];
 
         for (int i = 0; i < slotsX.Count; i++)
         {

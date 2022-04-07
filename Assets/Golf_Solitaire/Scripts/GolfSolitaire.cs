@@ -74,14 +74,14 @@ public class GolfSolitaire : MonoBehaviour
 	}
 	List<CardGolfSolitaire> ConvertListCardsToListCardGolfSolitaire(List<Card_GS> lCD)
 	{
-		List<CardGolfSolitaire> lCP = new List<CardGolfSolitaire>();
-		CardGolfSolitaire tCP;
-		foreach (Card_GS tCD in lCD)
+		List<CardGolfSolitaire> lCP_GS = new List<CardGolfSolitaire>();
+		CardGolfSolitaire tCP_GS;
+		foreach (Card_GS tCD_GS in lCD)
 		{
-			tCP = tCD as CardGolfSolitaire;
-			lCP.Add(tCP);
+			tCP_GS = tCD_GS as CardGolfSolitaire;
+			lCP_GS.Add(tCP_GS);
 		}
-		return (lCP);
+		return (lCP_GS);
 	}
 
 	CardGolfSolitaire Draw()
@@ -100,7 +100,7 @@ public class GolfSolitaire : MonoBehaviour
 			layoutAnchor.transform.position = layoutCenter;
 		}
 		CardGolfSolitaire cp;
-		foreach (SlotDef tSD in layout.slotDefs)
+		foreach (SlotDef_GS tSD in layout.slotDefs)
 		{
 			cp = Draw();
 			cp.faceUp = tSD.faceUp;
