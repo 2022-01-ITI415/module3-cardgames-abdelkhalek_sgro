@@ -28,7 +28,7 @@ public class Deck_GS : MonoBehaviour
 	public PT_XMLReader_GS xmlr;
 	// add from p 569
 	public List<string> cardNames;
-	public List<Card> cards;
+	public List<Card_GS> cards;
 	public List<Decorator> decorators;
 	public List<CardDefinition> cardDefs;
 	public Transform deckAnchor;
@@ -162,7 +162,7 @@ public class Deck_GS : MonoBehaviour
 		}
 
 		// list of all Cards
-		cards = new List<Card>();
+		cards = new List<Card_GS>();
 
 		// temp variables
 		Sprite tS = null;
@@ -173,7 +173,7 @@ public class Deck_GS : MonoBehaviour
 		{
 			GameObject cgo = Instantiate(prefabCard) as GameObject;
 			cgo.transform.parent = deckAnchor;
-			Card card = cgo.GetComponent<Card>();
+			Card_GS card = cgo.GetComponent<Card_GS>();
 
 			cgo.transform.localPosition = new Vector3(i % 13 * 3, i / 13 * 4, 0);
 

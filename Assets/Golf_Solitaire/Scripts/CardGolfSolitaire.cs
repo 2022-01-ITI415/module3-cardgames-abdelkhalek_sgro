@@ -10,7 +10,7 @@ public enum eCardState_GS
     discard
 }
 
-public class CardGolfSolitaire : Card
+public class CardGolfSolitaire : Card_GS
 {
     [Header("Set Dynamically: CardGolfSolitaire")]
     public eCardState_GS state = eCardState_GS.drawpile;
