@@ -150,3 +150,4 @@ Received Import Request.
   path: Assets/Golf_Solitaire/Scripts/CardGolfSolitaire.cs
   artifactKey: Guid(9b2b9c0c365e4cf469de3af763e625bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Golf_Solitaire/Scripts/CardGolfSolitaire.cs using Guid(9b2b9c0c365e4cf469de3af763e625bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e931118fc2dc69aaf25891bc2a4638d2') in 0.012507 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
