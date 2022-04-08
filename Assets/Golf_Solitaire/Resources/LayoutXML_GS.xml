@@ -1,4 +1,4 @@
-<xml>
+ <xml>
 	<!-- This file holds info for laying out the Prospector card game. -->
 	
 	<!-- The multiplier is multiplied by the x and y attributes below. -->
@@ -22,19 +22,19 @@
 	
 	<slot id="7" x="-6"  y="4" faceup="1" layer="1" hiddenby="14"/>
 	<slot id="8" x="-4"  y="4" faceup="1" layer="1" hiddenby="15"/>
-	<slot id="9"  x="-2" y="4" faceup="1" layer="2" hiddenby="16"/>
-	<slot id="10" x="0" y="4" faceup="1" layer="2" hiddenby="17"/>
-	<slot id="11" x="2" y="4" faceup="1" layer="2" hiddenby="18"/>
-	<slot id="12" x="4" y="4" faceup="1" layer="2" hiddenby="19"/>
-	<slot id="13" x="6"  y="4" faceup="1" layer="2" hiddenby="20"/>
+	<slot id="9"  x="-2" y="4" faceup="1" layer="1" hiddenby="16"/>
+	<slot id="10" x="0" y="4" faceup="1" layer="1" hiddenby="17"/>
+	<slot id="11" x="2" y="4" faceup="1" layer="1" hiddenby="18"/>
+	<slot id="12" x="4" y="4" faceup="1" layer="1" hiddenby="19"/>
+	<slot id="13" x="6"  y="4" faceup="1" layer="1" hiddenby="20"/>
 	
 	<slot id="14" x="-6"  y="2" faceup="1" layer="2" hiddenby="21"/>
 	<slot id="15" x="-4"  y="2" faceup="1" layer="2" hiddenby="22"/>
 	<slot id="16" x="-2"  y="2" faceup="1" layer="2" hiddenby="23"/>
 	<slot id="17" x="0"  y="2" faceup="1" layer="2" hiddenby="24"/>
-	<slot id="18" x="2" y="2" faceup="1" layer="3" hiddenby="25"/>
-	<slot id="19" x="4" y="2" faceup="1" layer="3" hiddenby="26"/>
-	<slot id="20" x="6" y="2" faceup="1" layer="3" hiddenby="27"/>
+	<slot id="18" x="2" y="2" faceup="1" layer="2" hiddenby="25"/>
+	<slot id="19" x="4" y="2" faceup="1" layer="2" hiddenby="26"/>
+	<slot id="20" x="6" y="2" faceup="1" layer="2" hiddenby="27"/>
 	
 	<slot id="21" x="-6" y="-2" faceup="1" layer="3" hiddenby="28"/>
 	<slot id="22" x="-4" y="-2" faceup="1" layer="3" hiddenby="29"/>

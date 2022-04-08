@@ -21,7 +21,6 @@ public class GolfSolitaire : MonoBehaviour
 	public float reloadDelay = 1f;
 	public Text gameOverText, roundResultText;
 
-
 	[Header("Set Dynamically")]
 	public Deck_GS deck;
 	public Layout_GS layout;
@@ -264,13 +263,13 @@ public class GolfSolitaire : MonoBehaviour
 			//print("Game Over. You Lost. :");
 			
 		}
-		SceneManager.LoadScene("GameScene");
+		SceneManager.LoadScene("GolfSolitaire");
 		Invoke("ReloadLevel", reloadDelay);
 	}
 
 	void ReloadLevel()
 	{
-		SceneManager.LoadScene("GameScene");
+		SceneManager.LoadScene("GolfSolitaire");
 	}
 
 	public bool AdjacentRank(CardGolfSolitaire c0, CardGolfSolitaire c1)
