@@ -318,3 +318,9 @@ Received Import Request.
   path: Assets/Prospector/_Prefabs/PrefabFloatingScore.prefab
   artifactKey: Guid(8d44dffdc4d85dd4da8dede8738f6f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prospector/_Prefabs/PrefabFloatingScore.prefab using Guid(8d44dffdc4d85dd4da8dede8738f6f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68aba15b010009da6af1aaa4e2afa2be') in 0.041145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 631.231398 seconds.
+  path: Assets/Prospector/__Scripts/Prospector.cs
+  artifactKey: Guid(a7d7d9d9d58522f4cb96693ace07ad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/__Scripts/Prospector.cs using Guid(a7d7d9d9d58522f4cb96693ace07ad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ecbe464eacd23653b5bee04d0056fa8') in 0.012589 seconds 
