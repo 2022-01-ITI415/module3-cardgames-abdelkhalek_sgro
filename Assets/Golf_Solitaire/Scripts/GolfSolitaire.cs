@@ -60,7 +60,7 @@ public class GolfSolitaire : MonoBehaviour
 
 	void Start()
 	{
-		Scoreboard.S.score = ScoreManager.SCORE;
+	
 		deck = GetComponent<Deck_GS>();
 		deck.InitDeck(deckXML_GS.text);
 		Deck_GS.Shuffle(ref deck.cards);
@@ -203,8 +203,7 @@ public class GolfSolitaire : MonoBehaviour
 				MoveToDiscard(target);
 				MoveToTarget(Draw());
 				UpdateDrawPile();
-				ScoreManager.EVENT(eScoreEvent.draw);
-				FloatingScoreHandler(eScoreEvent.draw);
+				
 				break;
 			case eCardState_GS.tableau:
 				bool validMatch = true;
@@ -220,8 +219,7 @@ public class GolfSolitaire : MonoBehaviour
 				tableau.Remove(cd);
 				MoveToTarget(cd);
 				SetTableauFaces();
-				ScoreManager.EVENT(eScoreEvent.mine);
-				FloatingScoreHandler(eScoreEvent.mine);
+			
 				break;
 		}
 		CheckForGameOver();
@@ -250,23 +248,21 @@ public class GolfSolitaire : MonoBehaviour
 
 	void GameOver(bool won)
 	{
-		int score = ScoreManager.SCORE;
+		
 		if (won)
 		{
 			gameOverText.text = "Round Over";
 			roundResultText.text = "You won this round!";
 			ShowResultsUI(true);
 			//print("Game Over. You Won! :");
-			ScoreManager.EVENT(eScoreEvent.gameWin);
-			FloatingScoreHandler(eScoreEvent.gameWin);
+			
 		}
 		else
 		{
 			gameOverText.text = "Game Over";
 			ShowResultsUI(true);
 			//print("Game Over. You Lost. :");
-			ScoreManager.EVENT(eScoreEvent.gameLoss);
-			FloatingScoreHandler(eScoreEvent.gameLoss);
+			
 		}
 		SceneManager.LoadScene("GameScene");
 		Invoke("ReloadLevel", reloadDelay);
@@ -300,7 +296,7 @@ public class GolfSolitaire : MonoBehaviour
 			case eScoreEvent.gameLoss:
 				break;
 			case eScoreEvent.mine:
-				FloatingScore fs;
+				
 				Vector2 p0 = Input.mousePosition;
 				p0.x /= Screen.width;
 				p0.y /= Screen.height;
@@ -308,7 +304,7 @@ public class GolfSolitaire : MonoBehaviour
 				fsPts.Add(p0);
 				fsPts.Add(fsPosMid);
 				fsPts.Add(fsPosRun);
-				fs = Scoreboard.S.CreateFloatingScore(ScoreManager.CHAIN, fsPts);
+				
 				fs.fontSizes = new List<float>(new float[] { 4, 50, 28 });
 				break;
 		}
