@@ -284,28 +284,4 @@ public class GolfSolitaire : MonoBehaviour
 		if (c0.rank == 13 && c1.rank == 1) return (true);
 		return (false);
 	}
-
-	void FloatingScoreHandler(eScoreEvent evt)
-	{
-		List<Vector2> fsPts;
-		switch (evt)
-		{
-			case eScoreEvent.draw:
-			case eScoreEvent.gameWin:
-			case eScoreEvent.gameLoss:
-				break;
-			case eScoreEvent.mine:
-				
-				Vector2 p0 = Input.mousePosition;
-				p0.x /= Screen.width;
-				p0.y /= Screen.height;
-				fsPts = new List<Vector2>();
-				fsPts.Add(p0);
-				fsPts.Add(fsPosMid);
-				fsPts.Add(fsPosRun);
-				
-				fs.fontSizes = new List<float>(new float[] { 4, 50, 28 });
-				break;
-		}
-	}
 }
