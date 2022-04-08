@@ -288,3 +288,33 @@ Received Import Request.
   path: Assets/Prospector/__Scripts/Prospector.cs
   artifactKey: Guid(a7d7d9d9d58522f4cb96693ace07ad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prospector/__Scripts/Prospector.cs using Guid(a7d7d9d9d58522f4cb96693ace07ad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea2b004db5856cd477509a99f82e0cf') in 0.005957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 763.146982 seconds.
+  path: Assets/Golf_Solitaire/Prefabs/PrefabCard.prefab
+  artifactKey: Guid(81068630c46575b4fad352a4bf85f88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Golf_Solitaire/Prefabs/PrefabCard.prefab using Guid(81068630c46575b4fad352a4bf85f88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78bec3729f9315dcbad9a2804346af45') in 0.196014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000610 seconds.
+  path: Assets/Golf_Solitaire/Prefabs/PrefabSprite.prefab
+  artifactKey: Guid(72ef4620ed50ffb47942c70216bfeeeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Golf_Solitaire/Prefabs/PrefabSprite.prefab using Guid(72ef4620ed50ffb47942c70216bfeeeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008747dab13de70e2b309e876f03cd14') in 0.016022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 214.202457 seconds.
+  path: Assets/Prospector/_Prefabs/PrefabCard.prefab
+  artifactKey: Guid(ee93767be21efa14eaa16db1093e90b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Prefabs/PrefabCard.prefab using Guid(ee93767be21efa14eaa16db1093e90b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838230422d58e5cd3f014ef201c92994') in 0.042229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000498 seconds.
+  path: Assets/Prospector/_Prefabs/PrefabSprite.prefab
+  artifactKey: Guid(12a0355f16a4e3040b7c1daff1c8ed35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Prefabs/PrefabSprite.prefab using Guid(12a0355f16a4e3040b7c1daff1c8ed35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a054f463a7161d60149eae85e548ce') in 0.018059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001032 seconds.
+  path: Assets/Prospector/_Prefabs/PrefabFloatingScore.prefab
+  artifactKey: Guid(8d44dffdc4d85dd4da8dede8738f6f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Prefabs/PrefabFloatingScore.prefab using Guid(8d44dffdc4d85dd4da8dede8738f6f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68aba15b010009da6af1aaa4e2afa2be') in 0.041145 seconds 

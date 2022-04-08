@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//test
 
 public enum eCardState_GS
 {
@@ -17,11 +16,11 @@ public class CardGolfSolitaire : Card
     public eCardState_GS state = eCardState_GS.drawpile;
     public List<CardGolfSolitaire> hiddenBy = new List<CardGolfSolitaire>();
     public int layoutID;
-    public SlotDef slotDef;
+    public SlotDef_GS slotDef;
 
     public override void OnMouseUpAsButton()
     {
-    GolfSolitaire.S.CardClicked(this); 
+        GolfSolitaire.S.CardClicked(this); 
         base.OnMouseUpAsButton();
     }
 
