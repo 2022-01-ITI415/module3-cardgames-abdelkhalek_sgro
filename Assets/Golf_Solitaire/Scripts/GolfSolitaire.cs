@@ -18,7 +18,7 @@ public class GolfSolitaire : MonoBehaviour
     public Vector2 fsPosRun = new Vector2(.5f, .75f);
     public Vector2 fsPosMid2 = new Vector2(.4f, 1.0f);
     public Vector2 fsPosEnd = new Vector2(.5f, .95f);
-    public float reloadDelay = 1f;
+    public float reloadDelay = 5f;
     public Text gameOverText, roundResultText;
 
     [Header("Set Dynamically")]
@@ -235,6 +235,11 @@ public class GolfSolitaire : MonoBehaviour
         {
             return;
         }
+        if (drawPile.Count == 0 || tableau.Count > 0)
+        {
+            GameOver(true);
+            return;
+        }
         foreach (CardGolfSolitaire cd in tableau)
         {
             if (AdjacentRank(cd, target))
@@ -253,14 +258,15 @@ public class GolfSolitaire : MonoBehaviour
             gameOverText.text = "Round Over";
             roundResultText.text = "You won this round!";
             ShowResultsUI(true);
-            //print("Game Over. You Won! :");
+            //print("Game Over. You Won!");
 
         }
         else
         {
             gameOverText.text = "Game Over";
+            roundResultText.text = "You Lost.";
             ShowResultsUI(true);
-            //print("Game Over. You Lost. :");
+            //print("Game Over. You Lost.");
 
         }
         SceneManager.LoadScene("GolfSolitaire");
