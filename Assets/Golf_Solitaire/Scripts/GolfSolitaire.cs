@@ -237,7 +237,7 @@ public class GolfSolitaire : MonoBehaviour
         }
         if (drawPile.Count == 0 || tableau.Count > 0)
         {
-            GameOver(true);
+            GameOver(false);
             return;
         }
         foreach (CardGolfSolitaire cd in tableau)
