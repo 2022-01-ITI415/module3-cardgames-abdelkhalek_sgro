@@ -43,7 +43,7 @@ public class GolfSolitaire : MonoBehaviour
         {
             gameOverText = go.GetComponent<Text>();
         }
-        go = GameObject.Find("RoundResult");
+        go = GameObject.Find("roundResult");
         if (go != null)
         {
             roundResultText = go.GetComponent<Text>();
