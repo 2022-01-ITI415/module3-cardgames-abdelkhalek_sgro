@@ -14,7 +14,7 @@ public class Card_GS : MonoBehaviour
     public List<GameObject> pipGOs = new List<GameObject>();
 
     public GameObject back;  // back of card;
-    public CardDefinition_GS def;  // from DeckXML.xm
+    public CardDefinition_GS def;  // from DeckXML_GS.xm
 
 
     public bool faceUp
@@ -90,7 +90,7 @@ public class Card_GS : MonoBehaviour
 [System.Serializable]
 public class Decorator_GS
 {
-    public string type;         // For card pips, tyhpe = "pip"
+    public string type;         // For card pips, type = "pip"
     public Vector3 loc;         // location of sprite on the card
     public bool flip = false;   //whether to flip vertically
     public float scale = 1.0f;
