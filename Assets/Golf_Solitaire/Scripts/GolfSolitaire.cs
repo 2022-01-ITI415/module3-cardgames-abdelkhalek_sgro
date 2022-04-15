@@ -141,15 +141,15 @@ public class GolfSolitaire : MonoBehaviour
     {
         foreach (CardGolfSolitaire cd in tableau)
         {
-            bool faceUp = true;
+            bool inPlay = true;
             foreach (CardGolfSolitaire cover in cd.hiddenBy)
             {
                 if (cover.state == eCardState_GS.tableau)
                 {
-                    faceUp = true;
+                    inPlay = true;
                 }
             }
-            cd.faceUp = faceUp;
+            cd.faceUp = inPlay;
         }
     }
 
@@ -280,7 +280,7 @@ public class GolfSolitaire : MonoBehaviour
 
     public bool AdjacentRank(CardGolfSolitaire c0, CardGolfSolitaire c1)
     {
-        if (!c0.faceUp || !c1.faceUp) return (false);
+        if (!c0.faceUp) return (false);
 
         if (Mathf.Abs(c0.rank - c1.rank) == 1)
         {

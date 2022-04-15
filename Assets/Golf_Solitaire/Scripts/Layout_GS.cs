@@ -60,9 +60,9 @@ public class Layout_GS : MonoBehaviour
                 case "slot":
                     tSD.faceUp = (slotsX[i].att("faceup") == "1");
                     tSD.id = int.Parse(slotsX[i].att("id"));
-                    if (slotsX[i].HasAtt("hiddenby"))
+                    if (slotsX[i].HasAtt("hiddenBy"))
                     {
-                        string[] hiding = slotsX[i].att("hiddenby").Split(',');
+                        string[] hiding = slotsX[i].att("hiddenBy").Split(',');
                         foreach (string s in hiding)
                         {
                             tSD.hiddenBy.Add(int.Parse(s));
