@@ -1,0 +1,62 @@
+ <xml>
+	<!-- This file holds info for laying out the GolfSolitaire card game. -->
+	
+	<!-- The multiplier is multiplied by the x and y attributes below. -->
+	<!-- This determines how loose or tight the layout is. --> 
+	<multiplier x="1.25" y="1.5" />
+	
+	<!-- In the XML below, id is the number of the card -->
+	<!-- x and y set position -->
+	<!-- faceup is 1 if the card is face-up -->
+	<!-- layer sets the depth layer so cards overlap properly -->
+	<!-- hiddenby is the ids of cards that keep a card face-down -->
+	
+	<!-- Layer0, the deepest cards. -->
+	<slot id="0" x="-9.5" y="5" faceup="1" layer="0" hiddenBy="7"/>
+	<slot id="1" x="-6.5"  y="5" faceup="1" layer="0" hiddenBy="8"/>
+	<slot id="2" x="-3.5"  y="5" faceup="1" layer="0" hiddenBy="9"/>
+	<slot id="3" x="-0.5" y="5" faceup="1" layer="0" hiddenBy="10"/>
+	<slot id="4" x="2.5" y="5" faceup="1" layer="0" hiddenBy="11"/>
+	<slot id="5" x="5.5" y="5" faceup="1" layer="0" hiddenBy="12"/>
+	<slot id="6" x="8.5"  y="5" faceup="1" layer="0" hiddenBy="13"/>
+	
+	<slot id="7" x="-9.5"  y="4" faceup="1" layer="1" hiddenBy="14"/>
+	<slot id="8" x="-6.5"  y="4" faceup="1" layer="1" hiddenBy="15"/>
+	<slot id="9"  x="-3.5" y="4" faceup="1" layer="1" hiddenBy="16"/>
+	<slot id="10" x="-0.5" y="4" faceup="1" layer="1" hiddenBy="17"/>
+	<slot id="11" x="2.5" y="4" faceup="1" layer="1" hiddenBy="18"/>
+	<slot id="12" x="5.5" y="4" faceup="1" layer="1" hiddenBy="19"/>
+	<slot id="13" x="8.5"  y="4" faceup="1" layer="1" hiddenBy="20"/>
+	
+	<slot id="14" x="-9.5"  y="3" faceup="1" layer="2" hiddenBy="21"/>
+	<slot id="15" x="-6.5"  y="3" faceup="1" layer="2" hiddenBy="22"/>
+	<slot id="16" x="-3.5"  y="3" faceup="1" layer="2" hiddenBy="23"/>
+	<slot id="17" x="-0.5"  y="3" faceup="1" layer="2" hiddenBy="24"/>
+	<slot id="18" x="2.5" y="3" faceup="1" layer="2" hiddenBy="25"/>
+	<slot id="19" x="5.5" y="3" faceup="1" layer="2" hiddenBy="26"/>
+	<slot id="20" x="8.5" y="3" faceup="1" layer="2" hiddenBy="27"/>
+	
+	<slot id="21" x="-9.5" y="2" faceup="1" layer="3" hiddenBy="28"/>
+	<slot id="22" x="-6.5" y="2" faceup="1" layer="3" hiddenBy="29"/>
+	<slot id="23" x="-3.5"  y="2" faceup="1" layer="3" hiddenBy="30"/>
+	<slot id="24" x="-0.5"  y="2" faceup="1" layer="3" hiddenBy="31"/>
+	<slot id="25" x="2.5"  y="2" faceup="1" layer="3" hiddenBy="32"/>
+	<slot id="26" x="5.5"  y="2" faceup="1" layer="3" hiddenBy="33"/>
+	<slot id="27" x="8.5"  y="2" faceup="1" layer="3" hiddenBy="34"/>
+
+	<slot id="28" x="-9.5" y="1" faceup="1" layer="4"/>
+	<slot id="29" x="-6.5" y="1" faceup="1" layer="4"/>
+	<slot id="30" x="-3.5" y="1" faceup="1" layer="4"/>
+	<slot id="31" x="-0.5" y="1" faceup="1" layer="4"/>
+	<slot id="32" x="2.5" y="1" faceup="1" layer="4"/>
+	<slot id="33" x="5.5" y="1" faceup="1" layer="4"/>
+	<slot id="34" x="8.5" y="1" faceup="1" layer="4"/>
+	
+	<!-- This positions the draw pile and staggers it -->
+	<slot type="drawpile" x="5" y="-4" xstagger="0.1" layer="5"/>
+	
+	<!-- This positions the discard pile and target card -->
+	<slot type="discardpile" x="-2" y="-4" layer="6"/>
+	
+</xml>
+	
